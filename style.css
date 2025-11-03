@@ -1,0 +1,262 @@
+/* --- Загальні стилі --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Дуже світлий фон */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Верхня панель (Шапка) --- */
+header {
+    background-color: #004d40; /* Глибокий синьо-зелений */
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* 2.5rem */
+    letter-spacing: 1px;
+}
+
+/* --- Блок Пошуку --- */
+#search-block {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #e0f2f1; /* Світлий відтінок основного кольору */
+}
+
+#search-block h2 {
+    margin-top: 0;
+    color: #004d40;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-form input[type="text"] {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 1em; /* 1rem */
+    border: 2px solid #b2dfdb;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #00796b;
+}
+
+.search-form button {
+    padding: 15px 25px;
+    font-size: 1em; /* 1rem */
+    background-color: #00796b; /* Яскравіший акцент */
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #004d40;
+}
+
+/* --- Блок Рекомендованих Книг --- */
+#recommend-books {
+    padding: 40px 0;
+}
+
+#recommend-books h2 {
+    text-align: center;
+    font-size: 2em; /* 2rem */
+    color: #004d40;
+    margin-bottom: 30px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.book-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.book-card img {
+    width: 100%;
+    height: 300px; /* Оптимальна висота для різних обкладинок */
+    object-fit: cover; /* Зберігає пропорції, обрізаючи зайве */
+}
+
+.book-card-content {
+    padding: 20px;
+}
+
+.book-card h3 {
+    margin-top: 0;
+    color: #004d40;
+}
+
+.book-card p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+/* --- Блок Контактів --- */
+#contact-block {
+    padding: 40px 0;
+    background-color: #333;
+    color: #f4f7f6;
+}
+
+#contact-block h2 {
+    text-align: center;
+    font-size: 2em; /* 2rem */
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    font-size: 1.1em; /* 1.1rem */
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #80cbc4; /* Світлий акцент для посилань */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка "Подзвонити" */
+#callButton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1em; /* 1.1rem */
+    font-weight: bold;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#callButton:hover {
+    background-color: #004d40;
+}
+
+/* Форма та Валідація */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #555;
+    border: 2px solid #777;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em; /* 1rem */
+    box-sizing: border-box; 
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00796b;
+}
+
+.error-message {
+    color: #ff8a80; /* Червоний для помилок */
+    font-size: 0.9em; /* 0.9rem */
+    display: none; 
+}
+
+#form-success {
+    color: #b9f6ca; /* Зелений для успіху */
+    font-size: 1.1em; /* 1.1rem */
+    display: none;
+    font-weight: bold;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #212121;
+    color: #aaa;
+    margin-top: 0;
+}

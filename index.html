@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книгарня "Слово"</title>
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Книгарня "Слово"</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="search-block">
+            <div class="container">
+                <h2>Знайти свою наступну книгу</h2>
+                <form class="search-form">
+                    <input type="text" placeholder="Введіть назву, автора або жанр..." aria-label="Пошук книги">
+                    <button type="submit">Шукати</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="recommend-books">
+            <div class="container">
+                <h2>Ми рекомендуємо</h2>
+                <div class="book-grid">
+                    
+                    <div class="book-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ7ameyRxoTyTZZtdFKEQ_GifBO9oF4AzCaQaimXRcZlWwveqEL_vfo3y0CbsA9WNqn8vfjr4w6NEM-SKu4NbjtVu9E5KjaV6pmCl_xVw&usqp=CAc" alt="Кобзар">
+                        <div class="book-card-content">
+                            <h3>Кобзар</h3>
+                            <p>Тарас Шевченко</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </div>
+                    
+                    <div class="book-card">
+                        <img src="https://book24.ua/upload/resize_cache/iblock/998/450_450_140cd750bba9870f18aada2478b24840a/998e35e7e7d310f424a8e26fafdadcf1.jpg" alt="Захар Беркут">
+                        <div class="book-card-content">
+                            <h3>Захар Беркут</h3>
+                            <p>Іван Франко</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </div>
+                    
+                    <div class="book-card">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRwduEzntxIq2h_s9oWWh80e84MijD6HFGWQ-mdHWuxL1DI4GK_kz1bFU9hS1DH68M0-UjP0h3_32a3ldLL3v383o9NneYLFcNUbaUn-9QJwPaZ1R0RUVywwww1YKGeOZtsM1c50A&usqp=CAc" alt="Тіні забутих предків">
+                        <div class="book-card-content">
+                            <h3>Тіні забутих предків</h3>
+                            <p>Михайло Коцюбинський</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </div>
+
+                    <div class="book-card">
+                        <img src="https://books.google.com.ua/books/publisher/content?id=HOJ3EAAAQBAJ&hl=uk&pg=PA1&img=1&zoom=3&bul=1&sig=ACfU3U0uoykgGcFRkjPVo8IF_gJhb9h3WQ&w=1280" alt="Місто">
+                        <div class="book-card-content">
+                            <h3>Місто</h3>
+                            <p>Валер’ян Підмогильний</p>
+                            <a href="#" class="btn">Купити</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-block">
+            <div class="container">
+                <h2>Зв'яжіться з нами</h2>
+                <div class="contact-content">
+                    
+                    <div class="contact-info">
+                        <h3>Наша адреса:</h3>
+                        <p>м. Київ, вул. Хрещатик, 1</p>
+                        
+                        <h3>Email:</h3>
+                        <p><a href="mailto:info@slovobooks.ua">info@slovobooks.ua</a></p>
+                        
+                        <h3>Телефон:</h3>
+                        <p><a href="tel:+380991234567">+38 (099) 123-45-67</a></p>
+
+                        <button id="callButton">Подзвонити нам</button>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я:</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error">Ім'я є обов'язковим.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Ваш Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error">Будь ласка, введіть коректний email.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Ваше повідомлення:</label>
+                                <textarea id="message" name="message" required></textarea>
+                                <span class="error-message" id="message-error">Повідомлення не може бути порожнім.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn">Надіслати</button>
+                            
+                            <p id="form-success">Дякуємо! Ваше повідомлення надіслано.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Книгарня "Слово". Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -72,6 +72,13 @@
                 </div>
             </div>
         </section>
+        
+        <section id="interesting-fact">
+            <div class="container">
+                <h3>Цікавий факт</h3>
+                <p>Перша друкована книга, створена Йоганном Гуттенбергом у XV столітті, була надрукована фарбою з додаванням міді, свинцю і сірки, що надавала рядкам красивого синюватого відтінку. Такі особливі фарби використовувалися для захисту тексту, а також щоб книги виглядали яскраво та ефектно, адже спочатку чорнила й фарби для рукописних книг готували з природних матеріалів, наприклад, із сажі чи рослинних відварів.</p>
+            </div>
+        </section>
 
         <section id="contact-block">
             <div class="container">
@@ -81,10 +88,8 @@
                     <div class="contact-info">
                         <h3>Наша адреса:</h3>
                         <p>м. Київ, вул. Хрещатик, 1</p>
-                        
                         <h3>Email:</h3>
                         <p><a href="mailto:info@slovobooks.ua">info@slovobooks.ua</a></p>
-                        
                         <h3>Телефон:</h3>
                         <p><a href="tel:+380991234567">+38 (099) 123-45-67</a></p>
 
@@ -98,25 +103,86 @@
                                 <input type="text" id="name" name="name" required>
                                 <span class="error-message" id="name-error">Ім'я є обов'язковим.</span>
                             </div>
-                            
                             <div class="form-group">
                                 <label for="email">Ваш Email:</label>
                                 <input type="email" id="email" name="email" required>
                                 <span class="error-message" id="email-error">Будь ласка, введіть коректний email.</span>
                             </div>
-                            
                             <div class="form-group">
                                 <label for="message">Ваше повідомлення:</label>
                                 <textarea id="message" name="message" required></textarea>
                                 <span class="error-message" id="message-error">Повідомлення не може бути порожнім.</span>
                             </div>
-                            
                             <button type="submit" class="btn">Надіслати</button>
-                            
                             <p id="form-success">Дякуємо! Ваше повідомлення надіслано.</p>
                         </form>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="color-demo">
+            <div class="container">
+                <h2>Демонстрація форматів кольорів (Графічні фрейми)</h2>
+                <div class="color-grid">
+                    <div class="color-box hex">
+                        <strong>HEX (Hexadecimal)</strong>
+                        <span>#004d40</span>
+                    </div>
+                    <div class="color-box rgb">
+                        <strong>RGB (Red, Green, Blue)</strong>
+                        <span>rgb(0, 121, 107)</span>
+                    </div>
+                    <div class="color-box hsl">
+                        <strong>HSL (Hue, Saturation, Lightness)</strong>
+                        <span>hsl(174, 100%, 24%)</span>
+                    </div>
+                    <div class="color-box rgba">
+                        <strong>RGBA (Red, Green, Blue, Alpha)</strong>
+                        <span>rgba(0, 77, 64, 0.8)</span>
+                    </div>
+                    <div class="color-box hsla">
+                        <strong>HSLA (Hue, Saturation, Lightness, Alpha)</strong>
+                        <span>hsla(174, 100%, 24%, 0.7)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price-table">
+            <div class="container">
+                <h2>Ціни на рекомендовані книги</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Назва книги</th>
+                            <th>Автор</th>
+                            <th>Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Кобзар</td>
+                            <td>Тарас Шевченко</td>
+                            <td>350 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Захар Беркут</td>
+                            <td>Іван Франко</td>
+                            <td>220 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Тіні забутих предків</td>
+                            <td>Михайло Коцюбинський</td>
+                            <td>240 грн</td>
+                        </tr>
+                        <tr>
+                            <td>Місто</td>
+                            <td>Валер’ян Підмогильний</td>
+                            <td>200 грн</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
